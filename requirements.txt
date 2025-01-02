@@ -1,7 +1,7 @@
 streamlit
 python-dotenv
 langchain-community
-groq-langchain
+langchain-groq
 langchain-openai
 pandas
 sqlalchemy
