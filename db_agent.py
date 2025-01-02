@@ -26,8 +26,8 @@ load_dotenv(find_dotenv())
 openai_key = os.getenv('GROQ_API_KEY')
 openai_key = st.secrets["GROQ_API_KEY"]
 # model = ChatGroq(temperature=0.8, groq_api_key=openai_key, model_name="llama-3.1-70b-versatile")
-# model = ChatGroq(temperature=0.8, groq_api_key=openai_key, model_name="gemma2-9b-it")
-model = ChatGroq(temperature=0.8, groq_api_key=openai_key, model_name="llama-3.1-70b-versatile")
+model = ChatGroq(temperature=0.8, groq_api_key=openai_key, model_name="gemma2-9b-it")
+# model = ChatGroq(temperature=0.8, groq_api_key=openai_key, model_name="llama-3.1-70b-versatile")
 
 df = pd.read_csv('salaries_2023.csv').fillna(value=0)
 
